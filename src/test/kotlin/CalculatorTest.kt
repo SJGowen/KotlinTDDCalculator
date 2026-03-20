@@ -35,4 +35,12 @@ class CalculatorTest {
 
         expectThat(result).isEqualTo(4.0)
     }
+
+    @Test
+    fun `dividing 12 by 5 should return 2dot4`() {
+        val calc = Calculator()
+        val result = calc.divide(12, 5)
+
+        expectThat(result).isEqualTo(2.4)
+    }
 }
